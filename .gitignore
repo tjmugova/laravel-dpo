@@ -1,0 +1,16 @@
+/vendor
+composer.lock
+/phpunit.xml
+.phpunit.result.cache
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/.idea
+/.vscode
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.env
