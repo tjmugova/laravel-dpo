@@ -68,13 +68,15 @@ $response = $token->createToken([
 ]);
 ```
 
-###Redirect After Successfuly Token Request 
+### Redirect After Successfuly Token Request 
+
 ```php
 return redirect($response['RedirectURL']);
 ```
 
-###Verify Token 
+### Verify Token 
 You can verify a token received above. The method takes various parameters as specified in the DPO API docs.
+
 ```php
 $token->verifyToken([
     'transToken' => $response['transToken'],
