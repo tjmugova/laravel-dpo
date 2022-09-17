@@ -221,10 +221,10 @@ class Token
             'body' => $postData
         ]);
         if ($response->status() === 200) {
-            $results = json_decode(json_encode(simplexml_load_string($response->body())), true);
+            //$results = json_decode(json_encode(simplexml_load_string($response->body())), true);
         }
 
-        return $response;
+        return json_decode(json_encode(simplexml_load_string($response->body())), true);
 
     }
 
